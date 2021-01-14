@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    padding: 60px;
+}
+
+.searchBox {
+    color: dimgray;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+.searchBox label {
+    width: 10%;
+}
+.searchBox input {
+    border-radius: 6px;
+    
+    width: 90%;
+}
+
+.item {
+    border: 1px solid dimgray;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    max-width: 150px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.item p {
+    font-size: 0.75rem;
+    margin: 5px;
+    text-align: center;
+}
+.item img {
+    display: block;
+    max-height: 150px;
+    margin: 10px auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
 }
